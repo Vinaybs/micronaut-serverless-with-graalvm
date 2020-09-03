@@ -24,4 +24,4 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run deploy.sh to build docker image
-        run: ls -ltr
+        run: ./deploy.sh
