@@ -1,3 +1,10 @@
+FROM maven:3.6.3-openjdk-11 as builder
+
+COPY . /home/application
+WORKDIR /home/application
+
+RUN mvn package
+
 FROM amazonlinux:2018.03.0.20191014.0 as graalvm
 COPY . /home/application
 WORKDIR /home/application
