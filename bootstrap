@@ -1,0 +1,3 @@
+#!/bin/sh
+set -euo pipefail
+./micronaut-serverless-with-graalvm -Xmx128m -Djava.library.path=$(pwd)
